@@ -1,0 +1,97 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+div.row {
+  width: 100%;
+  padding: 22px 125px;
+}
+
+div.header {
+  position: fixed;
+  z-index: 2;
+  height: 70px;
+  background-color: #000000;
+  color: #ffffff;
+}
+
+div.header_logo {
+  float: left;
+  padding: 0 0 0 25px;
+  width: 30%;
+}
+
+div.header_menu {
+  float: right;
+  padding: 0 25px 0 0;
+  width: 70%;
+}
+
+div.main_back {
+  position: relative;
+  height: 710px;
+  background: url("/Axit/Axit_Bacground.jpg") no-repeat;
+  background-size: cover;
+}
+
+ul.header {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li.header {
+  float: right;
+  padding: 4px 0 0 50px;
+}
+
+li.header a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  opacity: 0.7;
+}
+
+li.header a:hover {
+  text-shadow: 3px 3px 5px white;
+  opacity: 1;
+}
+
+/* For desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+@media only screen and (max-width: 1024px) {
+  
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+
+  div.row {
+    padding: 22px 20px;
+  }
+
+  li.header {
+    padding: 4px 0 0 10px;
+  }
+}
