@@ -31,13 +31,6 @@ div.header_menu {
   width: 70%;
 }
 
-div.main_back {
-  position: relative;
-  height: 710px;
-  background: url("/Axit/Axit_Bacground.jpg") no-repeat;
-  background-size: cover;
-}
-
 ul.header {
   list-style-type: none;
   margin: 0;
@@ -63,28 +56,115 @@ li.header a:hover {
   opacity: 1;
 }
 
+.dropbtn:hover, div.header_medium:hover .dropbtn {
+  border: 1px solid black;
+  opacity: 0.7;
+}
+
+div.header_medium {
+  display: none;
+  float: right;
+}
+
+.dropdown_content {
+  display: none;
+  position: absolute;
+  right: 30px;
+  background-color: black;
+  border: 1px solid white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(255, 255, 255, 0.5);
+  z-index: 1;
+}
+
+.dropdown_content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown_content a:hover {background-color: #333333;}
+
+/* This is part of displaying dropdown menu, but I manipulate it as JavaScript code. */
+/*
+div.header_medium:hover .dropdown_content {
+  display: block;
+}
+*/
+
+div.main_back {
+  position: relative;
+  height: 710px;
+  background: url("Axit_Bacground.jpg")  no-repeat center;
+  background-size: cover;
+}
+
+div.main_left {
+  padding: 158px 10px 20px 25px;
+}
+
+p.main_left_bold {
+  color: white;
+  font-size: 32px;
+}
+
+p.main_left_normal {
+  color: #8d8a8d;
+  font-size: 20px;
+}
+
+div.download {
+  width: 135px;
+  height: 42px;
+  border: 2px solid white;
+  margin: 40px 0 0 2px;
+  padding-top: 10px;
+  color: white;
+  text-align: center;
+}
+
+div.download:hover {
+  background-color: lightseagreen;
+}
+
 /* For desktop: */
-.col-1 {width: 8.33%;}
-.col-2 {width: 16.66%;}
-.col-3 {width: 25%;}
-.col-4 {width: 33.33%;}
-.col-5 {width: 41.66%;}
-.col-6 {width: 50%;}
-.col-7 {width: 58.33%;}
-.col-8 {width: 66.66%;}
-.col-9 {width: 75%;}
-.col-10 {width: 83.33%;}
-.col-11 {width: 91.66%;}
-.col-12 {width: 100%;}
+.col_1 {width: 8.33%;}
+.col_2 {width: 16.66%;}
+.col_3 {width: 25%;}
+.col_4 {width: 33.33%;}
+.col_5 {width: 41.66%;}
+.col_6 {width: 50%;}
+.col_7 {width: 58.33%;}
+.col_8 {width: 66.66%;}
+.col_9 {width: 75%;}
+.col_10 {width: 83.33%;}
+.col_11 {width: 91.66%;}
+.col_12 {width: 100%;}
 
 @media only screen and (max-width: 1024px) {
-  
+  ul.header {
+    display: none;
+  }
+
+  div.header_medium {
+    display: inline-block;
+  }
 }
 
 @media only screen and (max-width: 768px) {
   /* For mobile phones: */
-  [class*="col-"] {
+  [class*="col_"] {
     width: 100%;
+  }
+
+  ul.header {
+    display: inline;
+  }
+
+  div.header_medium {
+    display: none;
   }
 
   div.row {
@@ -93,5 +173,20 @@ li.header a:hover {
 
   li.header {
     padding: 4px 0 0 10px;
+  }
+}
+
+@media only screen and (max-width: 512px) {
+  /* For mobile phones: */
+  [class*="col_"] {
+    width: 100%;
+  }
+
+  ul.header {
+    display: none;
+  }
+
+  div.header_medium {
+    display: inline-block;
   }
 }

@@ -7,3 +7,14 @@ var body_height = window.innerHeight
 || document.body.clientHeight;
 
 var strMsg = "Browser inner window width: " + body_width + ", height: " + body_height + ".";
+
+function appearMenu() {
+  var dispState;
+
+  dispState = document.getElementById("menu_tray").style.display;
+
+  if (dispState == "block")
+    document.getElementById("menu_tray").style.display = "none";
+  else
+    document.getElementById("menu_tray").style.display = "block";
+}

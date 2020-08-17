@@ -7,16 +7,17 @@
   <meta name="author" content="luckyrabbit870930">
   <title>Axit Page</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/Axit/Axit.css">
-  <script src="/Axit/Axit.js"></script>
+  <link rel="stylesheet" href="Axit.css">
+  <script src="Axit.js"></script>
 </head>
 
 <body>
   <div class="row header">
     <div class="header_logo">
-      <img src="/Axit/Logo_head.png" alt="Logo">
+      <img src="Logo_head.png" alt="Logo" height="25">
     </div>
     <div class="header_menu">
+      <!-- This is for maximum width(bigger than 1024px). -->
       <ul class="header">
         <li class="header"><a href="#Contact" class="header">Contact</a></li>
         <li class="header"><a href="#Reviews" class="header">Reviews</a></li>
@@ -24,11 +25,33 @@
         <li class="header"><a href="#About" class="header">About</a></li>
         <li class="header"><a href="#Features" class="header">Features</a></li>
       </ul>
+      <!-- This is for medium width(smaller than 1024px). -->
+      <div class="header_medium">
+        <a href="#" onclick="appearMenu()"><img src="menu_tray.png" alt="tray menu" class="dropbtn" width="30" height="30"></a>
+        <div class="dropdown_content" id="menu_tray">
+          <a href="#">Features</a>
+          <a href="#">About</a>
+          <a href="#">Pricing</a>
+          <a href="#">Reviews</a>
+          <a href="#">Contact</a>
+        </div>
+      </div>
     </div>
   </div>
 
   <div class="row main_back">
-    
+    <div class="col_6 main_left">
+      <img src="Logo_head.png" alt="Logo">
+      <p class="main_left_bold">MODERN AXURE TEMPLATE <br>FOR BEAUTIFUL PROTOTYPES<br>_____</p>
+      <p class="main_left_normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean<br>
+        euismod bibendum laoreet. Proin gravida dolor sit amet lacus<br>
+        accumsan et viverra justo commodo.</p>
+      <div class="download">Download</div>
+    </div>
+
+    <div class="col_6">
+
+    </div>
   </div>
 
 </body>
