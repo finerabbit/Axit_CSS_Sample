@@ -18,5 +18,3 @@ function appearMenu() {
   else
     document.getElementById("menu_tray").style.display = "block";
 }
-
-// why doesn't it work?
