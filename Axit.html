@@ -13,23 +13,23 @@
 </head>
 
 <body>
-  <div class="row header">
-    <div class="header_logo">
+  <header class="row header">
+    <div class="header-logo">
       <img src="Logo_head.png" alt="Logo" height="25">
     </div>
-    <div class="header_menu">
+    <div class="header-menu">
       <!-- This is for maximum width(bigger than 1024px). -->
-      <ul class="header">
-        <li class="header"><a href="#Contact" class="header">Contact</a></li>
-        <li class="header"><a href="#Reviews" class="header">Reviews</a></li>
-        <li class="header"><a href="#Pricing" class="header">Pricing</a></li>
-        <li class="header"><a href="#About" class="header">About</a></li>
-        <li class="header"><a href="#Features" class="header">Features</a></li>
+      <ul class="header-list">
+        <li class="header-list"><a href="#Contact" class="header-list">Contact</a></li>
+        <li class="header-list"><a href="#Reviews" class="header-list">Reviews</a></li>
+        <li class="header-list"><a href="#Pricing" class="header-list">Pricing</a></li>
+        <li class="header-list"><a href="#About" class="header-list">About</a></li>
+        <li class="header-list"><a href="#Features" class="header-list">Features</a></li>
       </ul>
       <!-- This is for medium width(smaller than 1024px). -->
-      <div class="header_medium">
+      <div class="header-medium">
         <a href="#" onclick="appearMenu()"><img src="menu_tray.png" alt="tray menu" class="dropbtn" width="30" height="30"></a>
-        <div class="dropdown_content" id="menu_tray">
+        <div class="dropdown-content" id="menu-tray">
           <a href="#">Features</a>
           <a href="#">About</a>
           <a href="#">Pricing</a>
@@ -38,41 +38,41 @@
         </div>
       </div>
     </div>
-  </div>
+  </header>
 
-  <div class="row main_back">
-    <div class="col_6 main_left">
+  <section class="row main-back">
+    <div class="col-6 main-left">
       <img src="Logo_head.png" alt="Logo">
-      <p class="main_left_bold">MODERN AXURE TEMPLATE <br>FOR BEAUTIFUL PROTOTYPES<br>_____</p>
-      <p class="main_left_normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean<br>
+      <p class="main-left-bold">MODERN AXURE TEMPLATE <br>FOR BEAUTIFUL PROTOTYPES<br>_____</p>
+      <p class="main-left-normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean<br>
         euismod bibendum laoreet. Proin gravida dolor sit amet lacus<br>
         accumsan et viverra justo commodo.</p>
-      <div class="download">Download</div>
+      <div class="main-download">Download</div>
     </div>
-    <div class="col_6 main_right">
-      <div class="main_right_form">
-        <div class="main_form_row main_form_top">
+    <div class="col-6 main-right">
+      <div class="main-right-form">
+        <div class="main-form-row main-form-top">
           <p>Try Your <span class="orange"> FREE </span> Trial Today</p>
         </div>
-        <div class="main_form_row main_form_bottom">
+        <div class="main-form-row main-form-bottom">
           <form>
-            <input type="text" class="main_form_bottom_text" placeholder="Name" id="name" name="name">
-            <input type="email" class="main_form_bottom_text" placeholder="Email" id="email" name="email">
-            <input type="password" class="main_form_bottom_text" placeholder="Password" id="password" name="password">
-            <input type="submit" class="main_form_bottom_submit" value="Get Started">
+            <input type="text" class="main-form-bottom-text" placeholder="Name" id="name" name="name">
+            <input type="email" class="main-form-bottom-text" placeholder="Email" id="email" name="email">
+            <input type="password" class="main-form-bottom-text" placeholder="Password" id="password" name="password">
+            <input type="submit" class="main-form-bottom-submit" value="Get Started">
           </form>
         </div>
       </div>
     </div>
-  </div>
+  </section>
 
-  <div class="row row_social">
-    <div class="social_left">
-      <p class="row_social_text social_bold">Social Media</p>
-      <p class="row_social_text social_normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>
+  <nav class="row row-social">
+    <div class="col-5">
+      <p class="row-social-text text-bold">Social Media</p>
+      <p class="row-social-text text-normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>
         Aenean euismod bibendum laoreet.</p>
     </div>
-    <div class="social_right">
+    <div class="col-7">
       <a href="#" class="fa fa-facebook"></a>
       <a href="#" class="fa fa-twitter"></a>
       <a href="#" class="fa fa-google"></a>
@@ -81,15 +81,70 @@
       <a href="#" class="fa fa-stumbleupon"></a>
       <a href="#" class="fa fa-rss"></a>
     </div>
-  </div>
+  </nav>
 
-  <div class="row row_back_grey row_tabs">
-    
-  </div>
+  <section class="row row-back-grey">
+    <div class="col-3">
+      <div class="row-tabs">
+        <div class="row-tabs-cell">
+          <p>Tab1</p>
+        </div>
+        <div class="row-tabs-cell">
+          <p>Tab2</p>
+        </div>
+        <div class="row-tabs-cell">
+          <p>Tab3</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-9">
+      <img class="tabs-image" src="tabs_image.png" alt="Tabs image">
+      <p class="text-bold tabs-article">Tabs with soft transitioning effect.</p>
+      <p class="text-normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod<br>
+        bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra<br>
+        justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque<br>
+        penatibus et magnis dis parturient montes.<br>
+        <br>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod<br>
+        bibendum laoreet.</p>
+        <div class="tabs-download">Download</div>
+    </div>
+  </section>
 
-  <div class="row row_back_white row_sublist">
+  <section class="row row-back-white row-sublist">
+    <div class="col-6 row-sublist-left">
+      <img src="sublist_image.jpg" alt="Sub list" class="sublist-image">
+    </div>
+    <div class="col-6 row-sublist-right">
+      <div class="align-right">
+        <p class="text-bold">Sub list section<br><span class="orange-underline">_____</span></p>
+        <p class="text-normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean<br>
+          euismod bibendum laoreet. Proin gravida dolor sit amet lacus<br>
+          accumsan et viverra justo commodo.</p>
+        <ul class="style-none">
+          <li class="sublist-icon-up">
+            <span class="text-normal-bold">Title</span><br>
+            <span class="text-normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>
+            Aenean euismod bibendum laoreet.</span>
+          </li>
+          <li class="sublist-icon-down">
+            <span class="text-normal-bold">Title</span><br>
+            <span class="text-normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>
+              Aenean euismod bibendum laoreet. Proin gravida dolor<br>
+              sit amet lacus accumsan et viverra justo commodo.</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="row row-back-grey">
+
+  </section>
+
+  <section class="row row-back-white">
     
-  </div>
+  </section>
 
 </body>
 </html>

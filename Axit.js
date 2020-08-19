@@ -11,10 +11,10 @@ var strMsg = "Browser inner window width: " + body_width + ", height: " + body_h
 function appearMenu() {
   var dispState;
 
-  dispState = document.getElementById("menu_tray").style.display;
+  dispState = document.getElementById("menu-tray").style.display;
 
   if (dispState == "block")
-    document.getElementById("menu_tray").style.display = "none";
+    document.getElementById("menu-tray").style.display = "none";
   else
-    document.getElementById("menu_tray").style.display = "block";
+    document.getElementById("menu-tray").style.display = "block";
 }
