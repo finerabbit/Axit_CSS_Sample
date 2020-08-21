@@ -117,12 +117,18 @@ li.header-list a:hover {
 }
 
 .main-download {
-  max-width: 135px;
-  min-height: 42px;
-  margin: 40px 0 0 2px;
-  padding-top: 10px;
+  width: 135px;
+  height: 42px;
   border: 2px solid white;
   color: white;
+  text-align: center;
+  background: transparent;
+}
+
+.align-center {
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   text-align: center;
 }
 
@@ -224,7 +230,7 @@ li.header-list a:hover {
   font-weight: bold;
 }
 
-.fa {
+.fa-big {
   width: 13%;
   padding: 10px 0;
   font-size: 48px;
@@ -409,6 +415,78 @@ li.sublist-icon-down {
 .awesome-white {
   color: #86878b;
   background-color: white;
+}
+
+.text-customer {
+  padding: 40px 30px;
+  text-align: left;
+  background-color: #f5f5f5;
+  border-radius: 5px;
+}
+
+.row-stylish {
+  display: flex;
+  min-height: 320px;
+  background: url("stylish_banner.jpg")  no-repeat center;
+  background-size: cover;
+}
+
+.flex-align-center {
+  display: flex;
+  padding: 10px 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-align-end {
+  display: flex;
+  justify-content: center;
+  align-self: flex-end;
+}
+
+.row-column {
+  flex-direction: column;
+}
+
+.contact-form {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.contact-button {
+  min-width: 148px;
+  min-height: 46px;
+  background-color: #ff9b51;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.row-footer {
+  display: flex;
+  min-height: 80px;
+  background-color: black;
+  flex-direction: column;
+}
+
+.fa-small {
+  padding: 0 15px;
+  font-size: 23px;
+  text-decoration: none;
+  background: black;
+  color: #cccccc;
+}
+
+.text-small {
+  margin: 10px 0 0 0;
+  font-size: 13px;
+  color: #86878b;
 }
 
 /* For desktop: */
